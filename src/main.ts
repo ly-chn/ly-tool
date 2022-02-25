@@ -3,6 +3,7 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 
+// noinspection JSIgnoredPromiseFromCall
 loadFonts()
 
 createApp(App)

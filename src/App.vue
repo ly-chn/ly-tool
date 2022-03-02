@@ -1,23 +1,21 @@
 <template>
-  <v-app>
+  <v-app id="inspire">
+    <v-navigation-drawer v-model="drawer" app>
+    </v-navigation-drawer>
+
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>ly-tool</v-toolbar-title>
+    </v-app-bar>
+
     <v-main>
-      <HelloWorld/>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
+<script lang="ts" setup>
+import {ref} from "vue"
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+const drawer = ref(false)
 
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-}
 </script>

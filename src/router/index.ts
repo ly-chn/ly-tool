@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter, createWebHashHistory, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import { visitorRoutes } from './routes'
 
 const whiteRouteNameList: string[] = [];

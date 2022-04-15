@@ -13,11 +13,12 @@
     "@types/webfontloader": "^1.6.34",
     "roboto-fontface": "*",
     "vue": "^3.2.25",
-    "vuetify": "^3.0.0-alpha.0",
     "vue-router": "^4.0.13",
+    "vuetify": "^3.0.0-alpha.0",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.23",
     "@vitejs/plugin-vue": "^2.2.0",
     "@vuetify/vite-plugin": "^1.0.0-alpha.3",
     "autoprefixer": "^10.4.2",

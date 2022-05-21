@@ -14,7 +14,8 @@
   </v-app>
 </template>
 <script lang="ts" setup>
-import {ref} from "vue"
+import { onMounted, ref } from 'vue'
 
 const drawer = ref(false)
+
 </script>

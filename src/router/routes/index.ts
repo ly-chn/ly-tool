@@ -1,7 +1,6 @@
-import { LAYOUT } from '/@/router/constant'
 import { RouteRecordRaw } from 'vue-router'
 
-
+export const PageLayout = () => import('/@/layouts/page-layout.vue');
 export const RootRoute: RouteRecordRaw = {
     path: '/',
     name: 'Root',
@@ -13,11 +12,9 @@ export const RootRoute: RouteRecordRaw = {
 const dashboard: RouteRecordRaw = {
     path: '/dashboard',
     name: 'Dashboard',
-    component: LAYOUT,
+    component: PageLayout,
     redirect: '/dashboard/analysis',
     meta: {
-        orderNo: 10,
-        icon: 'ion:grid-outline',
         title: '首页'
     },
     children: [

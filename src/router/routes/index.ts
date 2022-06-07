@@ -1,6 +1,6 @@
 import { RouteRecordRaw } from 'vue-router'
 
-export const PageLayout = () => import('/@/layouts/page-layout.vue');
+export const PageLayout = () => import('/@/layouts/page-layout/index.vue');
 export const RootRoute: RouteRecordRaw = {
     path: '/',
     name: 'Root',
